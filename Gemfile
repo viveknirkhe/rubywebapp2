@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+#this is a test of gemfile edit
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
