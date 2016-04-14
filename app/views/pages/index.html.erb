@@ -140,12 +140,14 @@ Temporibus, voluptatibus.</p>
  
         <!-- Side Widget Well --> 
         <div class="well"> 
-            <h4>Side Widget Well</h4> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p> 
-        </div> 
- 
-    </div> 
- 
+            <h4>Recent Articles</h4> 
+            <% @articles.each do |article| %>
+                <strong><%= link_to article.title, article %></strong><br/>
+                <%= article.created_at %> <br/>
+                <p>
+                    <%= article.body.truncate(50) %>
+                </p>    
+            <% end %>
 </div> <!-- /.row --> 
  
 <hr> 
