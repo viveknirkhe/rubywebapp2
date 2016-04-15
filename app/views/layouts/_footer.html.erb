@@ -1,5 +1,5 @@
 <% if current_user %>
-<footer class="footer navbar-fixed-bottom" role="contentinfo">
+<footer class="footer-distributed navbar-fixed-bottom" role="contentinfo">
   <div class="container">
       <p>viveksruby.com © 2015 <a href="http://www.viveksruby.com" target="_blank">Viveks Ruby</a> | <%= link_to "About Us", pages_about_path %> | <%= link_to "Contact Us", pages_contact_path %> </p>
   	 	<div class="footer-icons "> 
@@ -13,7 +13,7 @@
 
 <footer class="footer navbar-fixed-bottom" role="contentinfo">
   <div class="container">
-      <p>viveksruby.com © 2015 <a href="http://www.viveksruby.com" target="_blank">Viveks Ruby</a> | <%= link_to "About Us", pages_about_path %> | <%= link_to "Contact Us", pages_contact_path %> </p>
+      <p>viveksruby.com © 2015 <a href="http://www.viveksruby.com" target="_blank">Viveks Ruby</a> | <%= link_to "About Us", pages_about_path,{:class => "page_scroll"} %> | <%= link_to "Contact Us", pages_contact_path, {:class => "page_scroll"} %> </p>
   	 	<div class="footer-icons "> 
    	 	 	<a href="#"><i class="fa fa-facebook"></i></a> 
    	 	 	<a href="#"><i class="fa fa-twitter"></i></a> 
