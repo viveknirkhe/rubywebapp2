@@ -1,11 +1,19 @@
 <!-- Nested Comment --> 
 <div class="media"> 
     <div class="pull-left"> 
+        <strong><%= comment.user.username %></strong>
     </div> 
     <div class="media-body"> 
-        <p class="media-heading">
-            testing
+        <p class="media-heading pull-right">
+            <%= time_ago_in_words(comment.updated_at) %>
+        </p> 
+        <br />
+        <p class="media-heading pull-right">
+            <%= link_to "Edit", edit_article_comment_path(comment.article, comment) %> 
+            <%= link_to "Delete", [comment.article, comment], method: :delete, data: { confirm: "Are you sure?" } %>
         </p> 
     </div> 
+    <%= comment.body %>
+    <br />
 </div> 
 <!-- End Nested Comment --> 
